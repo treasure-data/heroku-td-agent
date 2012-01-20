@@ -1,6 +1,6 @@
-# Running td-agent on Heroku
+# td-agent on Heroku
 
-This repository contains whole stack to run td-agent on Heroku platform. Please follow these steps.
+This repository contains whole stack to run td-agent on Heroku platform. [HTTP plugin](http://fluentd.org/doc/plugin.html#http) is used to receive the streaming logs.
 
 ### 1) Clone this repository
 
