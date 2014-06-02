@@ -11,12 +11,17 @@ This repository contains whole stack to run td-agent on Heroku platform. [HTTP p
     $ vi td-agent.conf
     $ git commit -a -m 'update apikey'
 
-### 3) Heroku
+### 3) Generate Gemfile.lock
+
+    $ bundle install
+    $ git commit -a -m 'add Gemfile.lock'
+
+### 4) Heroku
 
     $ heroku create --stack cedar
     $ git push heroku master
 
-### 4) Test
+### 5) Test
 
     # debug
     $ curl "http://td-agent-on-heroku.herokuapp.com/debug.test?json=%7B%22json%22%3A%22message%22%7D"
