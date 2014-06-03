@@ -8,6 +8,9 @@ This repository contains whole stack to run td-agent on Heroku platform. [HTTP p
     
 ### 2) Set your API key
 
+Please access to [here](https://console.treasuredata.com/users/current). At the right most column, you can retrieve the API key.
+
+
     $ vi td-agent.conf
     $ git commit -a -m 'update apikey'
 
