@@ -2,9 +2,9 @@ GEM
   remote: http://rubygems.org/
   specs:
     cool.io (1.2.4)
-    fluent-plugin-td (0.10.19)
+    fluent-plugin-td (0.10.18)
       fluentd (~> 0.10.27)
-      td-client (~> 0.8.61)
+      td-client (~> 0.8.58)
     fluentd (0.10.48)
       cool.io (>= 1.1.1, < 2.0.0, != 1.2.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
@@ -27,5 +27,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-td (~> 0.10.18)
+  fluent-plugin-td (= 0.10.18)
   fluentd (~> 0.10.48)
