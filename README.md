@@ -10,21 +10,15 @@ This repository contains whole stack to run td-agent on Heroku platform. [HTTP p
 
 Please access to [here](https://console.treasuredata.com/users/current). At the right most column, you can retrieve the API key.
 
-
     $ vi td-agent.conf
     $ git commit -a -m 'update apikey'
 
-### 3) Generate Gemfile.lock
-
-    $ bundle install
-    $ git commit -a -m 'add Gemfile.lock'
-
-### 4) Heroku
+### 3) Heroku
 
     $ heroku create --stack cedar
     $ git push heroku master
 
-### 5) Test
+### 4) Test
 
     # debug
     $ curl "http://td-agent-on-heroku.herokuapp.com/debug.test?json=%7B%22json%22%3A%22message%22%7D"

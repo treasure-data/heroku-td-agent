@@ -1,0 +1,31 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cool.io (1.2.4)
+    fluent-plugin-td (0.10.19)
+      fluentd (~> 0.10.27)
+      td-client (~> 0.8.61)
+    fluentd (0.10.48)
+      cool.io (>= 1.1.1, < 2.0.0, != 1.2.0)
+      http_parser.rb (>= 0.5.1, < 0.7.0)
+      json (>= 1.4.3)
+      msgpack (>= 0.4.4, < 0.6.0, != 0.5.3, != 0.5.2, != 0.5.1, != 0.5.0)
+      sigdump (~> 0.2.2)
+      yajl-ruby (~> 1.0)
+    http_parser.rb (0.6.0)
+    httpclient (2.3.4.1)
+    json (1.8.1)
+    msgpack (0.5.8)
+    sigdump (0.2.2)
+    td-client (0.8.61)
+      httpclient (~> 2.3.4)
+      json (>= 1.7.6)
+      msgpack (>= 0.4.4, < 0.6.0, != 0.5.3, != 0.5.2, != 0.5.1, != 0.5.0)
+    yajl-ruby (1.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fluent-plugin-td (~> 0.10.18)
+  fluentd (~> 0.10.48)
