@@ -1,27 +1,22 @@
-# td-agent on Heroku
+# Treasure Agent on Heroku
 
-This repository contains whole stack to run td-agent on Heroku platform. [HTTP plugin](http://docs.fluentd.org/articles/in_http) is used to receive the streaming logs. For further information, please look at [this documentation](http://docs.treasuredata.com/articles/heroku-rest).
+This repository contains everything to run Treasure Agent on Heroku. [HTTP plugin](http://docs.fluentd.org/articles/in_http) is used to receive the streaming logs. For further information, please look at [this documentation](http://docs.treasuredata.com/articles/heroku-rest).
 
-### 1) Clone this repository
+## Setup
 
-    $ git clone git://github.com/treasure-data/heroku-td-agent.git
-    
-### 2) Set your API key
+There is no step 1. Just click on the Heroku Deploy button here.
 
-Please access to [here](https://console.treasuredata.com/users/current). At the right most column, you can retrieve the API key.
+<a href="https://heroku.com/deploy?template=https://github.com/kiyoto/heroku-td-agent"><img src="https://www.herokucdn.com/deploy/button.png"/></a>
 
-    $ vi td-agent.conf
-    $ git commit -a -m 'update apikey'
+By default, a new Treasure Data account is created. If you already have an account with a [Treasure Data API key](http://docs.treasuredata.com/articles/get-apikey), fill out the "TREASURE\_DATA\_API\_KEY\_OVERRIDE" field.
 
-### 3) Heroku
+<img src="https://raw.githubusercontent.com/kiyoto/heroku-td-agent/master/heroku-td-agent-screenshot.png"/>
 
-    $ heroku create --stack cedar
-    $ git push heroku master
 
-### 4) Test
+## Testing
 
     # debug
-    $ curl "http://td-agent-on-heroku.herokuapp.com/debug.test?json=%7B%22json%22%3A%22message%22%7D"
+    $ curl "http://<YOUR_APP_NAME>.herokuapp.com/debug.test?json=%7B%22json%22%3A%22message%22%7D"
     
     # import
-    $ curl "http://td-agent-on-heroku.herokuapp.com/td.sample_db.sample_table?json=%7B%22json%22%3A%22message%22%7D"
+    $ curl "http://<YOUR_APP_NAME>.herokuapp.com/td.sample_db.sample_table?json=%7B%22json%22%3A%22message%22%7D"
