@@ -6,11 +6,11 @@ This repository contains everything to run Treasure Agent on Heroku. [HTTP plugi
 
 There is no step 1. Just click on the Heroku Deploy button here.
 
-<a href="https://heroku.com/deploy?template=https://github.com/kiyoto/heroku-td-agent"><img src="https://www.herokucdn.com/deploy/button.png"/></a>
+<a href="https://heroku.com/deploy?template=https://github.com/treasure-data/heroku-td-agent"><img src="https://www.herokucdn.com/deploy/button.png"/></a>
 
 By default, a new Treasure Data account is created. If you already have an account with a [Treasure Data API key](http://docs.treasuredata.com/articles/get-apikey), fill out the "TREASURE\_DATA\_API\_KEY\_OVERRIDE" field.
 
-<img src="https://raw.githubusercontent.com/kiyoto/heroku-td-agent/master/heroku-td-agent-screenshot.png"/>
+<img src="https://raw.githubusercontent.com/treasure-data/heroku-td-agent/master/heroku-td-agent-screenshot.png"/>
 
 
 ## Testing

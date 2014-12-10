@@ -1,9 +1,9 @@
 {
   "name": "Treasure Agent on Heroku",
   "description": "Set up Treasure Agent in 30 seconds on Heroku",
-  "repository": "https://github.com/kiyoto/heroku-td-agent",
+  "repository": "https://github.com/treasure-data/heroku-td-agent",
   "keywords": ["Fluentd", "Logging", "Treasure Data"],
-  "logo": "https://raw.githubusercontent.com/kiyoto/heroku-td-agent/master/logo.png",
+  "logo": "https://raw.githubusercontent.com/treasure-data/heroku-td-agent/master/logo.png",
   "env": {
      "TREASURE_DATA_API_KEY_OVERRIDE": {
        "description": "Override the Heroku-provided Treasure Data API key with your own",
