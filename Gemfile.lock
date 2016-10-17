@@ -1,32 +1,34 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    cool.io (1.2.4)
-    fluent-plugin-td (0.10.18)
-      fluentd (~> 0.10.27)
-      td-client (~> 0.8.58)
-    fluentd (0.10.57)
-      cool.io (>= 1.1.1, < 2.0.0, != 1.2.0)
+    cool.io (1.4.5)
+    fluent-plugin-td (0.10.29)
+      fluentd (>= 0.10.27, < 2)
+      td-client (~> 0.8.66)
+    fluentd (0.12.29)
+      cool.io (>= 1.2.2, < 2.0.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
       json (>= 1.4.3)
-      msgpack (>= 0.4.4, < 0.6.0, != 0.5.3, != 0.5.2, != 0.5.1, != 0.5.0)
+      msgpack (>= 0.5.11, < 0.6.0)
       sigdump (~> 0.2.2)
+      string-scrub (>= 0.0.3, <= 0.0.5)
       tzinfo (>= 1.0.0)
       tzinfo-data (>= 1.0.0)
       yajl-ruby (~> 1.0)
     http_parser.rb (0.6.0)
-    httpclient (2.4.0)
-    json (1.8.1)
-    msgpack (0.5.9)
-    sigdump (0.2.2)
-    td-client (0.8.67)
-      httpclient (~> 2.4.0)
+    httpclient (2.8.2.4)
+    json (2.0.2)
+    msgpack (0.5.12)
+    sigdump (0.2.4)
+    string-scrub (0.0.5)
+    td-client (0.8.84)
+      httpclient (>= 2.7)
       json (>= 1.7.6)
-      msgpack (>= 0.4.4, < 0.6.0, != 0.5.3, != 0.5.2, != 0.5.1, != 0.5.0)
-    thread_safe (0.3.4)
+      msgpack (>= 0.5.6, < 2)
+    thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2014.10)
+    tzinfo-data (1.2016.7)
       tzinfo (>= 1.0.0)
     yajl-ruby (1.2.1)
 
@@ -34,5 +36,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-td (= 0.10.18)
-  fluentd (~> 0.10.48)
+  fluent-plugin-td (= 0.10.29)
+  fluentd (~> 0.12.28)
+
+RUBY VERSION
+   ruby 2.2.5p319
+
+BUNDLED WITH
+   1.13.5
