@@ -37,10 +37,10 @@ PLATFORMS
 
 DEPENDENCIES
   fluent-plugin-td (= 0.10.29)
-  fluentd (~> 0.12.28)
+  fluentd (~> 0.12.29)
 
 RUBY VERSION
-   ruby 2.2.5p319
+   ruby 2.3.1p112
 
 BUNDLED WITH
    1.13.5
