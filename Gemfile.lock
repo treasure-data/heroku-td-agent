@@ -30,7 +30,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2016.7)
       tzinfo (>= 1.0.0)
-    yajl-ruby (1.2.1)
+    yajl-ruby (1.4.1)
 
 PLATFORMS
   ruby
@@ -43,4 +43,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.5
+   1.16.4
