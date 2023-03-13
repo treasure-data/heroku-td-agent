@@ -17,7 +17,7 @@ GEM
       yajl-ruby (~> 1.0)
     http_parser.rb (0.6.0)
     httpclient (2.8.2.4)
-    json (2.0.2)
+    json (2.6.3)
     msgpack (0.5.12)
     sigdump (0.2.4)
     string-scrub (0.0.5)
